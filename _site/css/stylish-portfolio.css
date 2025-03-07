@@ -372,3 +372,51 @@ footer {
     position: relative;
     z-index: 2;
   }
+
+
+  /* Mobile-specific styles */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        flex: 1; /* Allow it to shrink */
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .text-vertical-center h1 {
+        font-size: 3em; /* Reduce size */
+    }
+
+    .btn-dark {
+        padding: 10px; /* Make buttons smaller */
+    }
+
+    .map {
+        height: 50vh; /* Use viewport height for flexibility */
+    }
+}
+
+.container, .row, .text-vertical-center {
+    max-width: 100%;
+    overflow-wrap: break-word; /* Ensures long words wrap instead of overflowing */
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0 auto; /* Centers the content */
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+body {
+    overflow-x: hidden;
+}
