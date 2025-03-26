@@ -28,6 +28,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+
+
 </head>
 
 
@@ -53,7 +56,7 @@
       <a href="#invited-speakers" onclick = $("#menu-close").click(); >Invited Speakers</a>
     </li>
     <li>
-      <a href="#important-dates" onclick = $("#menu-close").click(); >Important Dates</a>
+      <a href="#important-dates" onclick = $("#menu-close").click(); >Registration</a>
     </li>
     <li>
       <a href="#format" onclick = $("#menu-close").click(); >Format</a>
@@ -87,9 +90,9 @@
     <h3 style="color:white;">An international workshop <br>June 25-27, 2025 <br>McMaster University, Hamilton, ON, Canada</h3>
     <br>
     <br>
-    <!-- <a href="#about" class="btn btn-dark btn-lg"><b>Notice of Interest Form</b></a> -->
+    <a class="btn btn-dark btn-lg" href="#important-dates" target="_blank"><b>Registration Form</b></a>
     <br>
-    <h4 style="color:white;"><i>Last updated: March 23rd, 2025</i></h4>
+    <h4 style="color:white;"><i>Last updated: March 26th, 2025</i></h4>
   </div>
 </header>
 
@@ -100,10 +103,11 @@
     <div class="section">
       <div class="row">
         <div class="title">
+
           <h1>When & Where</h1>
         </div>
         <div class="content">
-          <p class="lead">25-27 June, 2025</p>
+          <p class="lead" style="margin-top: 20px;">25-27 June, 2025</p>
           <p class="lead">A.N Bourns Science Building (ABB), McMaster University, Hamilton, Ontario, Canada. </p>
         </div>
       </div>
@@ -156,7 +160,7 @@
           <h1>Meeting Rationale</h1>
         </div>
         <div class="content">
-          <p class="lead">This conference will honour the distinguished career of <b>Ralph Pudritz</b>, 
+          <p class="lead" style="margin-top: 20px;">This conference will honour the distinguished career of <b>Ralph Pudritz</b>, 
             bringing together experts from around the world in the communities of star formation, 
             planet formation, and astrobiology to celebrate his impact on these fields. 
           </p>
@@ -207,7 +211,7 @@
         </div>
         <div class="content">
           <!-- A mixture of scientific and homecoming events. -->
-          <p class="lead"> 
+          <p class="lead" style="margin-top: 20px;"> 
             This meeting is designed for researchers and HQP in star formation, planetary formation, and 
             astrobiology. It will feature talks focused on Ralph Pudritz's impact on these fields, 
             alongside cutting-edge research and recent advances. Participants will consist of a diverse 
@@ -224,14 +228,15 @@
             <h2>Program Highlights:</h2>
             <ul>
               <li><p class="lead"><b>Invited speakers:</b> Distinguished experts in star formation, planet formation and astrobiology</p></li>
-              <li><p class="lead"><b>Contributed talks:</b> 30 presentations</p></li>
+              <li><p class="lead"><b>Contributed talks:</b> 30 oral presentations</p></li>
               <li><p class="lead"><b>Daily schedule:</b> Talks of mixed dicipline daily, not confined to strict sessions</p></li>
               <li><p class="lead"><b>Hybrid format:</b> Inclusive approach for online interaction</p></li>
-              <li><p class="lead"><b>Lunch:</b> 80-minute lunch breaks</p></li>
+              <li><p class="lead"><b>Poster sessions:</b> Interactive poster pop-up sessions</p></li>
+              <li><p class="lead"><b>Lunch:</b> 80-minute lunch breaks with lunch provided</p></li>
               <li><p class="lead"><b>Breaks:</b> Multiple 30-minute coffee breaks each day</p></li>
             </ul>
 
-            <p class="lead">The detailed program schedule is coming soon.</p>
+            <!-- <p class="lead">The detailed program schedule is coming soon.</p> -->
 
             <br>
             <h2>Special Events:</h2>
@@ -258,7 +263,7 @@
         </div>
         <div class="content">
           <ul class="list-unstyled">
-            <li><p class="lead">Chris McKee (UC Berkeley)</p></li>
+            <li><p class="lead" style="margin-top: 20px;">Chris McKee (UC Berkeley)</p></li>
             <li><p class="lead">Tom Ray (DIAS Dunsink Observatory)</p></li>
             <li><p class="lead">Jim Stone (Princeton University)</p></li>
             <li><p class="lead">Paul Higgs (McMaster University)</p></li>
@@ -279,14 +284,113 @@
     <div class="section">
       <div class="row">
         <div class="title">
-          <h1>Important Dates</h1>
+          <h1>Registration, Abstract Submission & Important Dates</h1>
         </div>
         <div class="content">
           <!-- <p class="lead">Registration is not yet open.</p> -->
+          <a class="btn btn-dark btn-lg" href="https://register.mcmaster.ca/" target="_blank" style="margin-top: 20px;"><p class="lead" style="margin-top: 0px; margin-bottom: 0px;">Registration Form</p></a>
+
+
+
+          <!-- Collapsible Section -->
+          <button class="collapsible"><p class="lead" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px;">Registration Types</p></button>
+          <div class="content-collapsible">
+            <h3>Early registration (available March 21 to May 16)</h3>
+            <ul class="list-unstyled">
+              <li><p class="lead">Student: CAD$110 plus hst</p></li>
+              <li><p class="lead">Non-Student: CAD$220 plus hst</p></li>
+            </ul>
+            <h3>Late registration (available May 17 to June 16)</h3>
+            <ul class="list-unstyled">
+              <li><p class="lead">Student: CAD$140 plus hst</p></li>
+              <li><p class="lead">Non-Student: CAD$250 plus hst</p></li>
+            </ul>
+            <h3>Virtual Registration (available March 21 to June 16)</h3>
+            <ul class="list-unstyled">
+              <li><p class="lead">Virtual registration (online only): CAD$80 plus hst</p></li>
+            </ul>
+            <h3>Banquet Dinner (available March 21 to May 16)</h3>
+            <ul class="list-unstyled">
+              <li><p class="lead"> Banquet @ the Diplomat Restaurant: CAD$90 plus hst</p></li>
+            </ul>
+          </div>
+
+
+          <button class="collapsible"><p class="lead" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px;">Abstract Submission</p></button>
+          <div class="content-collapsible">
+            <p class="lead">Abstracts for contributed talks are due by <b>May 16th</b>. Abstracts submitted after May 16th will be considered for posters.</p>
+            <p class="lead">Abstract submission is done through the <a href="https://register.mcmaster.ca/" target="_blank">Registration Form</a>. </p>
+            <p class="lead">During completion of the form, you'll have the opportunity to upload a document containing the title and abstract of your contribution (talk or poster). Follow the naming convention LastName_FirstName_DocumentTitle.pdf. </p>
+            <img src="img/abstract-submission/upload-document.png" alt="Abstract Submission" style="width: 100%;">
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+          </div>
+
+
+          <button class="collapsible"><p class="lead" style="margin-top: 5px; margin-bottom: 5px; margin-left: 20px;">Guide to the Registration Form</p></button>
+          <div class="content-collapsible">
+            <p class="lead"><b>1. Navigate to <a href="https://register.mcmaster.ca/" target="_blank">https://register.mcmaster.ca/</a>.</b> </p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>2. Create an account by clicking "Create one here"</b>. You'll receive a confirmation email from meet@mcmaster.ca. Note: Even if you have a MacID you must first
+              create an account on the platform. </p>
+            <img src="img/registration/step2.jpg" alt="Create account" style="width: 100%;">
+
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>3. Log in.</b> Once you have created your account, then you will be able to login using either your MacID Login or Guest Login.
+              Throughout this process, please do not press refresh or go to the previous page. If you wish to correct your booking, please use the GO BACK button and the
+              bottom of the page when it is available.</p>
+              <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>4. Click "General Registration".</b> </p>
+            <img src="img/registration/step4.jpg" alt="General Registration" style="width: 100%;">
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>5. Enter the Event/Group code: <b>RALPOSIUM</b>.</b> Select "RalPosium 2025 - Event Registration & Accommodations". </p>
+            <img src="img/registration/step5.jpg" alt="RALPOSIUM" style="width: 100%;">
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>6. Complete the Personal Information page.</b> Dietary restrictions are relevant for the provided lunch. Answer 
+              the "Do you require on campus accommodation" question with a "Yes" or "No" only.</p>
+              <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>7. Select your desired registration type.</b> Early registration options are:</p>
+            <img src="img/registration/step7.png" alt="Early Registration" style="width: 100%;">
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>8. If you said "Yes" to Overnight On-campus Accommodations, choose your preferred arrival and departure dates.</b> Accomodation 
+            is available for four (4) nights: June 24th, 25th, 26th, and 27th. See more details <a href="#accommodations" target="_blank">here</a>.</p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>9. Read the Guest Expectations document and sign with your account email address.</b> </p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>10. Abstract submission.</b> Upload a document containing the title and abstract of your contribution (talk or poster) following the naming convention LastName_FirstName_DocumentTitle.pdf. </p>
+            <img src="img/abstract-submission/upload-document.png" alt="Abstract Submission" style="width: 100%;">
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>11. Add a RalPosium Banquet Dinner Ticket.</b> Wednesday night, June 25th, at The Diplomat Restaurant in Hamilton!</p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>12. Review and pay.</b> All fees are due upon time of booking. Cancellation and refund requests will be reviewed on a case-by-case basis; a non-refundable $25 administrative and credit card processing fee will apply. Accommodations can be cancelled with 48hr notice for a full refund.</p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead"><b>13. Check your inbox (or junk folder) for a confirmation email.</b> </p>
+            <p class="lead" style="margin-top: 1px; color:#f1f1f1;">--  </p>
+
+            <p class="lead">If you have any questions, please write to: <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:ralposium2025@gmail.com">ralposium2025@gmail.com</a>.</p>
+
+          </div>
+
+
+          <br>
+          <br>
           <ul class="list-unstyled">
-            <li><p class="lead"><b>March 24, 2025:</b> Conference registration opens.</p></li>
-            <li><p class="lead"><b>May 25, 2025:</b> Conference registration closes.</p></li>
-            <li><p class="lead"><b>June 25-27, 2025:</b> Join us for "RalPosium"!</p></li>
+            <li><p class="lead">Early registration opens <b>March 25, 2025</b> and closes <b>May 16, 2025</b>.</p></li>
+            <li><p class="lead">Late registration opens <b>May 17, 2025</b> and closes <b>June 16, 2025</b>. Late registrants will not have the option of purchasing a Banquet Dinner ticket.</p></li>
+            <li><p class="lead">Abstract submission deadline for talks: <b>May 16, 2025</b> (same as early registration).</p></li>
+            <li><p class="lead">Abstract submission deadline for posters: <b>June 16, 2025</b> (same as late registration).</p></li>
+
           </ul>
 
         </div>
@@ -296,6 +400,51 @@
   </div>
 </section>
 
+
+
+
+<!-- CSS for collapsible -->
+<style>
+  .collapsible {
+    background-color: #777;
+    color:#f1f1f1;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    border: 5px solid white; /* Added white border */
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content-collapsible {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border: 4px solid white; /* Added white border */
+  }
+</style>
+
+<!-- JavaScript to toggle collapsible -->
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
   <hr class="small">
 <section id="format" class="about">
   <div class="container">
@@ -307,7 +456,7 @@
           <h1>Format</h1>
         </div>
         <div class="content">
-          <p class="lead">The meeting will have a <b>hybrid format</b>, with both audience and 
+          <p class="lead" style="margin-top: 20px;">The meeting will have a <b>hybrid format</b>, with both audience and 
             speakers being able to join on-site at McMaster University, and online. 
             Ralph's professional connections during his career have extended around the 
             world, and this format ensures that there are no borders to joining this 
@@ -334,7 +483,7 @@
         </div>
         <div class="content">
           <ul class="list-unstyled">
-            <li><p class="lead">Rachid Ouyed, Chair (University of Calgary)</p></li>
+            <li><p class="lead" style="margin-top: 20px;">Rachid Ouyed, Chair (University of Calgary)</p></li>
             <li><p class="lead">Ben Pearce (Purdue University)</p></li>
             <li><p class="lead">René Heller (Max Planck Institute for Solar System Research)</p></li>
             <li><p class="lead">Elizabeth Tasker (Japan Aerospace Exploration Agency)</p></li>
@@ -359,7 +508,7 @@
         </div>
         <div class="content">
           <ul class="list-unstyled">
-            <li><p class="lead">Rachel Pillsworth, Chair (McMaster University)</p></li>
+            <li><p class="lead" style="margin-top: 20px;">Rachel Pillsworth, Chair (McMaster University)</p></li>
             <li><p class="lead">Tamara Koletic (McMaster University)</p></li>
             <li><p class="lead">Jess Speedie (University of Victoria)</p></li>
             <li><p class="lead">Yasuhiro Hasegawa (Jet Propulsion Laboratory)</p></li>
@@ -449,10 +598,13 @@
           <h1>Accommodations in Hamilton</h1>
         </div>
         <div class="content">
-          <h2>On Campus </h2>
-          <p class="lead">The LOC has 30 rooms blocked out for accommodations on campus at McMaster for CAD$90 per night. These rooms are first-come-first-serve, and are intended for students and postdocs as a cheaper option.</p>
-          <!-- <p class="lead">Note: We are looking into more affordable on-campus accommodations for students. Option will be available through registration form.</p> -->
-
+          <h2>On Campus at McMaster</h2>
+          <p class="lead">A block of thirty (30) Single Suites has been set aside in <a href="https://maps.app.goo.gl/FM85fPnMW4ymZQ4J7" target="_blank">Les Prince Hall</a> for guests looking to stay on campus during the conference.
+            Each Single Suite features 1 twin bed, a private washroom and includes bed linens, toiletries, and WIFI.
+            These rooms are first-come-first-serve, and are intended for 
+            students and postdocs as a cheaper option. They can be booked on the <a href="#important-dates" target="_blank">Registration Form</a>.
+            More information on the rooms can be found <a href="https://housing.mcmaster.ca/future-residents/rooms/" target="_blank">here</a>.</p>
+          
           <br>
           <h2>Hotels</h2>
 
@@ -526,7 +678,7 @@
 
         <div class="content">
           <section id="map" class="map">
-            <p class="lead">A.N Bourns Science Building, College Ct, Hamilton, ON L8S 4L8</p>
+            <p class="lead" style="margin-top: 20px;">A.N Bourns Science Building, College Ct, Hamilton, ON L8S 4L8</p>
             <iframe id="map_iframe"
               width="100%"
               height="100%"
