@@ -56,7 +56,10 @@
       <a href="#invited-speakers" onclick = $("#menu-close").click(); >Invited Speakers</a>
     </li>
     <li>
-      <a href="#important-dates" onclick = $("#menu-close").click(); >Registration</a>
+      <a href="#registration" onclick = $("#menu-close").click(); >Registration</a>
+    </li>
+    <li>
+      <a href="#important-dates" onclick = $("#menu-close").click(); >Important Dates</a>
     </li>
     <li>
       <a href="#format" onclick = $("#menu-close").click(); >Format</a>
@@ -90,7 +93,7 @@
     <h3 style="color:white;">An international workshop <br>June 25-27, 2025 <br>McMaster University, Hamilton, ON, Canada</h3>
     <br>
     <br>
-    <a class="btn btn-dark btn-lg" href="#important-dates" target="_blank"><b>Registration Form</b></a>
+    <a class="btn btn-dark btn-lg" href="#registration" target="_blank"><b>Registration Form</b></a>
     <br>
     <h4 style="color:white;"><i>Last updated: March 26th, 2025</i></h4>
   </div>
@@ -277,14 +280,14 @@
 </section>
 
   <hr class="small">
-<section id="important-dates" class="about">
+<section id="registration" class="about">
   <div class="container">
 
     <!-- When & Where -->
     <div class="section">
       <div class="row">
         <div class="title">
-          <h1>Registration, Abstract Submission & Important Dates</h1>
+          <h1>Registration & Abstract Submission</h1>
         </div>
         <div class="content">
           <!-- <p class="lead">Registration is not yet open.</p> -->
@@ -381,13 +384,74 @@
 
             <p class="lead">If you have any questions, please write to: <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:ralposium2025@gmail.com">ralposium2025@gmail.com</a>.</p>
 
-          </div>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
-          <br>
-          <br>
+
+
+<!-- CSS for collapsible -->
+<style>
+  .collapsible {
+    background-color: #777;
+    color:#f1f1f1;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    border: 5px solid white; /* Added white border */
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content-collapsible {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border: 4px solid white; /* Added white border */
+  }
+</style>
+
+<!-- JavaScript to toggle collapsible -->
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+  <hr class="small">
+<section id="important-dates" class="about">
+  <div class="container">
+
+    <!-- When & Where -->
+    <div class="section">
+      <div class="row">
+        <div class="title">
+          <h1>Important Dates</h1>
+        </div>
+        <div class="content">
+          
           <ul class="list-unstyled">
-            <li><p class="lead">Early registration opens <b>March 25, 2025</b> and closes <b>May 16, 2025</b>.</p></li>
+            <li><p class="lead" style="margin-top: 20px;">Early registration opens <b>March 25, 2025</b> and closes <b>May 16, 2025</b>.</p></li>
             <li><p class="lead">Late registration opens <b>May 17, 2025</b> and closes <b>June 16, 2025</b>. Late registrants will not have the option of purchasing a Banquet Dinner ticket.</p></li>
             <li><p class="lead">Abstract submission deadline for talks: <b>May 16, 2025</b> (same as early registration).</p></li>
             <li><p class="lead">Abstract submission deadline for posters: <b>June 16, 2025</b> (same as late registration).</p></li>
