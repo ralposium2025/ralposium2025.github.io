@@ -1,0 +1,97 @@
+<!-- <hr class="small"> -->
+
+<section id="photos" class="photos-section no-background">
+  <div class="container text-center">
+    <h1><a href="https://drive.google.com/drive/folders/1495EBLc-vVBuTENMCy_qGW2psixIc1Ib?usp=sharing" target="_blank">Conference Photo Collection</a></h1>
+
+    <!-- Large main photo -->
+    <img src="img/photos/groupphoto.JPG" alt="Conference Photo (Outside ABB)" class="main-photo" onclick="openModal(this)">
+
+    <!-- Horizontal scrolling carousel -->
+    <div class="photo-carousel">
+      <img src="img/photos/ralphgroup.JPG" alt="Ralph Group Members, Past & Present" onclick="openModal(this)">
+      <img src="img/photos/ralph-talk.jpg" alt="Ralph's Talk" onclick="openModal(this)">
+      <img src="img/photos/catgifts.jpg" alt="Ralph & Patricia (Cat Gifts)" onclick="openModal(this)">
+      <img src="img/photos/virtual_ryugu_rock.png" alt="Group Photo on Ryugu (JAXA Station Virtual 3D Social Space)" onclick="openModal(this)">
+      <img src="img/photos/yasuhiro-talk.jpg" alt="Yasuhiro Hasegawa" onclick="openModal(this)">
+      <img src="img/photos/ralph_jaxa.jpg" alt="Exploring JAXA Station" onclick="openModal(this)">
+      <img src="img/photos/ralph-les-memoires.jpg" alt="Ralph 'Les Memoires' at Banquet Dinner" onclick="openModal(this)">
+      <img src="img/photos/planet-simulator.jpg" alt="Origins of Life Lab: Planet Simulator" onclick="openModal(this)">
+      <img src="img/photos/ralph_and_rachid.jpg" alt="Ralph & Rachid" onclick="openModal(this)">
+      <img src="img/photos/rachid-talk.jpg" alt="Rachid Ouyed" onclick="openModal(this)">
+      <img src="img/photos/rene-talk.jpg" alt="René Heller" onclick="openModal(this)">
+      <img src="img/photos/elizabeth-talk.jpg" alt="Elizabeth Tasker" onclick="openModal(this)">
+      <img src="img/photos/jim-talk.jpg" alt="Jim Stone" onclick="openModal(this)">
+      <img src="img/photos/paul-talk.jpg" alt="Paul Higgs" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
+
+<!-- Modal for image viewer -->
+<!-- <div id="photoModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" src="" alt="Expanded Photo">
+</div> -->
+<div id="photoModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" src="" alt="">
+  <p class="lead" id="modalCaption"></p>
+</div>
+
+<script>
+  function openModal(img) {
+    const modal = document.getElementById('photoModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modalCaption.textContent = img.alt;
+
+    modal.classList.add('active');
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('photoModal');
+    modal.classList.remove('active');
+
+    // optional: reset modal content
+    document.getElementById('modalImg').src = '';
+    document.getElementById('modalCaption').textContent = '';
+  }
+</script>
+
+
+
+
+
+
+<!-- <section id="photos" class="photos-section no-background">
+  <div class="container text-center">
+    <h1>Conference Photo Collection</h1>
+
+    <img src="img/photos/groupphoto.JPG" alt="Main Conference Photo" class="main-photo" onclick="openModal(this)">
+
+    <div class="thumbnail-grid">
+      <img src="img/photos/ralph-talk.jpg" alt="Photo 2" onclick="openModal(this)">
+      <img src="img/photos/virtual_ryugu_rock.png" alt="Photo 3" onclick="openModal(this)">
+      <img src="img/photos/catgifts.jpg" alt="Photo 4" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
+
+<div id="photoModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" src="" alt="Expanded Photo">
+</div>
+
+
+<script>
+  function openModal(img) {
+    const modal = document.getElementById('photoModal');
+    const modalImg = document.getElementById('modalImg');
+    modalImg.src = img.src;
+    modal.classList.add('active');
+  }
+
+  function closeModal() {
+    document.getElementById('photoModal').classList.remove('active');
+  }
+</script> -->
