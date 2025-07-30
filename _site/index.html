@@ -47,6 +47,9 @@
       <a href="#photos" onclick = $("#menu-close").click(); >Conference Photo Collection</a>
     </li>
     <li>
+      <a href="#ralph-video" onclick = $("#menu-close").click(); >Recording of Ralph's Talk</a>
+    </li>
+    <li>
       <a href="#about" onclick = $("#menu-close").click(); >When & Where</a>
     </li>
     <li>
@@ -113,7 +116,7 @@
     <br>
     <a class="btn btn-dark btn-lg" href="#registration" target="_blank"><b><s>Registration Form</s></b></a>
     <br>
-    <h4 style="color:white;"><i>Last updated: July 11th, 2025</i></h4>
+    <h4 style="color:white;"><i>Last updated: July 30th, 2025</i></h4>
   </div>
 </header>
 
@@ -122,6 +125,7 @@
 <section id="photos" class="photos-section no-background">
   <div class="container text-center">
     <h1>Conference Photo Collection</h1>
+    <br>
 
     <!-- Large main photo -->
     <img src="img/photos/groupphoto.JPG" alt="Conference Photo (Outside ABB)" class="main-photo" onclick="openModal(this)">
@@ -216,6 +220,60 @@
     document.getElementById('photoModal').classList.remove('active');
   }
 </script> -->
+  
+<hr class="small">
+<section id="ralph-video" class="about">
+  <div class="container text-center">
+    <h1>From Stars to Life: Past, Present and Future</h1>
+    <h3>Recording of the Conference Finale</h3>
+    <br>
+
+    <!-- Ralph Video Section -->
+    <div class="section">
+      <!-- <div class="container text-center">
+        <h1>Conference Photo Collection</h1>
+      </div> -->
+      <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px;">
+
+        <!-- Left Column: Abstract -->
+        <div class="abstract" style="flex: 1 1 45%; min-width: 300px;">
+          <!-- <div class="title">
+            <h1>About the Video</h1>
+          </div> -->
+          <!-- <p class="lead" style="margin-top: 20px;"> -->
+          <p class="lead">
+            <!-- <i>The development of revolutionary observational capabilities in astronomy and astrophysics over 
+            the last 50 years has driven major breakthroughs in our understanding of how stars and their 
+            planetary systems form and evolve.  -->
+            <i>"I have been extremely fortunate in my career to work with my students, postdocs, and many 
+            collaborators on a number of fundamental problems in star and planet formation and on the 
+            physical and chemical conditions leading to the origin of life. My current and former students 
+            and postdocs organized a wonderful conference, held at McMaster University on June 25-27, 2025, 
+            to celebrate and honour my contributions to science and scientific life over a 45 year (and 
+            counting) career. In this special conference talk, I give a personal perspective on my scientific 
+            and personal journey through this fascinating landscape."</i> <b>- Ralph E. Pudritz, July 2025</b>
+          </p>
+        </div>
+
+        <!-- Right Column: Embedded YouTube Video -->
+        <div class="video" style="flex: 1 1 47%; min-width: 300px; margin-top: 10px; display: flex; justify-content: center;">
+          <div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9; position: relative;">
+            <iframe src="https://www.youtube.com/embed/rxqX9ecQNhw"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <hr class="small">
 <section id="about" class="about">
   <div class="container">
